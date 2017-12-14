@@ -52,11 +52,74 @@
 </div>
 
 <!-- Main de la page -->
+    
+<br>
+<div class="row justify-content-sm-center">
+    <img src="img/Capture_squelette.PNG" alt="image" class="rounded img-fluid col-sm-4">
+    <div class="col-sm-6">
+    <h1>Squelette</h1>
+        <p>Nous avons opté pour un squelette de positionnement : ce fichier gère la position de toutes les autres pièces grâce aux contraintes que nous avons fixé entre les pièce « .part » et le squelette. 
 
-<main role="main">
+Dans le set géométrique ordonné : <br>
+Edition des plans<br>
+Paramétrage : <br>
+Pour effectuer le paramétrage nous avons tout d’abords cherché les valeurs à piloter. Nous en avons identifié deux : l’angle de rotation de la poignée et le déplacement vertical de la tige dentée. 
+Nous avons dans un premier temps, lors de la création de plan, lié le plan médian de la roue dentée et celui de la poignée à l’aide d’une tangence. Cela permet au deux plans de manière synchrone. 
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons fait de même pour le déplacement de la tige dentée (nom dans l’arborescence : Deplacement_tige_dentee). Nous avons créé une formule « d’égalité » entre la distance selon z du « Point_5 » et le paramètre  « Deplacement_tige_dentee».
+Finalement, afin de lier déplacement angulaire et le déplacement vertical, nous avons utilisé la fonction « Table de paramétrage ». Cette dernière nous a généré un tableau Excel que nous avons rempli de la manière suivante : <br>
+	La première colonne correspond aux différents angles de rotation de la poignée (allant de 10° à 360°)
+	La seconde colonne correspond au calcul du déplacement de la tige verticale engendré par cette rotation. Nous l’avons calculé de la manière suivante : <br>
+=((Angle_poignee×π)/180)×(Dp/2) ; avec Dp le diamètre primitif de l’engrenage (28mm). <br>
 
+Création de sous ensemble dans le squelette : <br>
+Nous avons crée 3 sous-ensembles dans notre squelette (3 products). Chaque sous-ensemble correspondant à un mouvement élementaire : 
+1er sous-ensemble : Ensemble_presseur :
+<ul class="list-unstyled">
+	<li>08 : Presseur</li>
+	<li>12 : Tige_dentee</li>
+	<li>13 : Capuchon</li>
+	<li>14 : Ecrou_a_creneaux</li>
+	<li>15 : Chapeau</li>
+	<li>18 : Vis_presseur</li>
+	<li>20 : Ressort</li>
+</ul>
+2ème sous_ensemble : Ensemble_mise_en_rotation :
+<ul class="list-unstyled">
+	<li>09 : Poignee</li>
+	<li>10 : Roue_dentee</li>
+	<li>22 : Circlips</li>
+	<li>23 : Chapeau_poignee</li>
+</ul>
 
-</main>
+3ème sous_ensemble : Ensemble_bati :<br> Les 12 autres pièces étant statiques
+
+Nous avons utilisé le plan xy repère principal de Catia comme repère de la « table ». <br>
+    </div>
+</div> 
+    <br>
+<div class="row col-sm-12">
+    <div class="col-sm-1"></div>
+    <div class="mb-1 col-sm-10 text-left">
+    <p>
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+Nous avons par la suite un premier paramétrage de l’angle de rotation du « plan poignée » (nom dans l’arborescence : Angle_poignee). Nous avons créé une formule « d’égalité » entre l’angle de la poignée « Angle » et le paramètre  « Angle_poignee ».
+
+    </p>
+</div>
+</div>
     
 <!-- Footer de la page -->
 

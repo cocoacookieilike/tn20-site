@@ -5,3 +5,8 @@
 	opacity: 0.9;
 	text-shadow: 1px 1px #FFF;
 }
+
+img.resize {
+    width:540px; /* you can use % */
+    height: auto;
+}
