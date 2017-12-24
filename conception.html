@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Presse Agrume TN20</title>
+  <title>Presse-Agrumes TN20</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -60,7 +60,48 @@
     
 <!-- Contenu de la page -->
     
+<div class="row col-sm-12">
+    <div class="col-sm-1"></div>
+    <div class="mb-1 col-sm-10 text-left">
+     <br><h1>Quelques explications quant à la conception!</h1><br>
+    <p>
+<i>Nous avons décidé de réaliser 30% des pièces sous Creo, 43% sous Catia et 27% des pièces ont été obtenues sur le site Trace Part.
+Les pièces suivantes ont été modélisées à l’aide de la technique surfacique, car ces pièces possèdent des courbes dans les trois dimensions : </i> 
+<ul class="list-unstyled">
+  <li><b>Pièce 6 : Gobelet :</b> 
+    Cette pièce a été réalisée sous Creo, car la fonction révolution de surface était plus adaptée à la forme de la pièce. Nous avons donc dessiné une esquisse du profil du gobelet, puis identifié l’axe de révolution. Grâce à la fonction révolution du logiciel CREO, la surface du gobelet apparaît. Après sélection de cette surface, nous avons utilisé l’option « épaissir » de CREO, qui transforme la surface en un volume d’une épaisseur constante de 1mm.</li><br>
+    <li><b>Pièce 7 : Support_fruit :</b>
+        Cette pièce a été traitée de manière identique au Gobelet (également sur CREO). Nous avons, une fois le volume obtenu, percé la matière. C’est à l’aide de la fonction « matrice » que nous avons effectué les différents perçages, de diamètres identiques, autour du même axe de révolution.</li><br> 
+    <li><b>Pièce 2 : Socle : </b></li>
+ </ul>
+
+<i>Les autres pièces ont été conçues via la méthode volumique. 
+Nous allons vous expliquer par la suite les différentes méthodes que nous avons utilisé pour concevoir certaines de ces pièces : </i><br>
+        
+<ul class="list-unstyled">
+    <li><b>Pièce 1 : Support_Socle : </b>
+Cette pièce est principalement composée d’extrusions. Une fois les nervures esquissées, pour rendre le rendu encore plus fidèle à la réalité, nous avons modélisé les petites extrusions carrées sur la face inférieure de la pièce.</li><br>
+     <li><b>Pièce 4 (Tige_prinsipale), 5 (Support_gobelet), 8 (Presseur), 13 (Capuchon), 15 (Chapeau) et 23 (Chapeau_poignée) :</b>
+         Nous avons conçu ces pièces à l’aide de la fonction révolution de Catia, après avoir préalablement esquissé leurs profils fermés. </li><br>
+     <li><b>Pièce 9 : Poignée :</b>
+Nous avons modélisé cette pièce sur Catia. L’axe principal a été extrudé grâce à la fonction révolution du logiciel. Nous avons par la suite créé un plan incliné de 10 degrés par rapport au plan zx d’origine. Nous avons recréé un nouveau plan décalé de 15mm par rapport à celui-ci. C’est sur ce dernier que nous avons dessiné l’esquisse qui formera le manche de la poignée. Le manche de la poignée est creux, contrairement au corps qui est plein. </li><br>
+    <li><b>Pièce 10 : Roue_dentée :</b>
+Nous avons identifié, dans un premier temps, les caractéristiques de cet engrenage, c’est-à-dire la valeur de son module (m), de son nombre de dents (z) et de son diamètre primitif (Dp).  Puis nous avons récupéré le modèle CAO de cette roue, sur le site TracePart. Finalement, nous avons effectué la gorge en son centre, qui permettra au méplat de la poignée de mettre en rotation la roue dentée.</li><br>
+     <li><b>Pièce 11 : Raccord_principal :</b>
+Nous avons conçu la première partie de cette pièce sur le logiciel CREO. Afin d’utiliser la fonction booléenne de Catia, nous avons exporté la pièce en step, afin qu’elle puisse être importée par la suite, sur le logiciel Catia. La fonction booléenne permet de retirer un volume extrudé dans un autre corps, au volume principal. </li><br>
+       <li><b>Pièce 12 : Tige_dentée :</b>
+Afin de traiter la partie crémaillère de cette pièce, nous avons esquissé une première dent, que nous avons ensuite matricée. L'axe principal à été obtenu à l'aide de l'outil "révolution". Une des extrémités de cette pièce a été filetée, alors que l'autre extrémité a été perçée puis taraudée.  </li><br>
+        <li><b>Pièce 20 : Ressort :</b>
+Pour modéliser le ressort, nous avons suivi la « méthode 2 » vue en cours avec le paramétrage sur CREO. Et nous avons pu le dimensionner comme nous le souhaitions. Nous l’avons ensuite exporté via le format « step » afin de pouvoir l’assembler avec les autres pièces sur Catia. </li><br>
+    <li><b>Pièce 22 : Circlips :</b>
+Cette pièce a été modélisée à l'aide de l'outil balayage de CREO. Une fois l'esquisse traçée (profil non fermé), cet outil place le volume tout autour de l'esquisse via la forme souhaitée. </li><br>
+
     
+Les vis, rondelles et écrous ont été récupérés sur le site TracePart.  
+
+</ul>
+    </p>
+</div>      
     
 <!-- Footer de la page -->
 
